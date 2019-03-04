@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Adrian's RSS feed generator</title>
+  <meta name="description" content="Adrian's RSS feed generator">
+  <meta name="author" content="Adrian McClyde">
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+
+<body>
+  <form id="rssSubmit" method="POST" action="/generateRSS">
+    <div>
+    <h1>RSS generator</h1>
+      <h2>Feed Elements</h2>
+        <label for="title">Title: </label>
+        <input id="rssTitle" placeholder="Enter channel title" name="rss[rsstitle]" type="text" />
+        <label for="rssLink">Link: </label>
+        <input id="rssLink" placeholder="Enter channel link" name="rss[link]" type="text" />
+        <label for="rssDescription">Description: </label>
+        <input id="rssDescription" placeholder="Enter channel description" name="rss[description]" type="text" />
+      <h2>Story Elements</h2>
+        <label for="storyTitle">Title: </label>
+        <input id="storyTitle" placeholder="Enter story title" name="rss[storytitle]" type="text" />
+        <label for="storyLink">Link: </label>
+        <input id="storyLink" placeholder="Enter story link" name="rss[storylink]" type="text" />
+        <label for="storyDescription">Description: </label>
+        <input id="storyDescription" placeholder="Enter story description" name="rss[storydescription]" type="text" />
+
+    <input type="submit" value="Generate RSS Feed" />
+</div>
+  </form>
+</body>
+</html>
